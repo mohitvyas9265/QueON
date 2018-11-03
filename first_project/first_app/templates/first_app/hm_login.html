@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block head %}
+{% load static %}
+<!-- <link rel="stylesheet" href="{% static 'first_app/style.css' %}"/>
+<link rel="stylesheet" href="{% static 'first_app/bootstrap.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'first_app/font-awesome.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'first_app/themify-icons.css' %}"/>
+<link rel="stylesheet" href="{% static 'first_app/animate.css' %}"/>
+<link rel="stylesheet" href="{% static 'first_app/owl.carousel.css' %}"/>
+<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'/> -->
+<meta charset="utf-8" name="Home" content="Home">
+<title>Home</title>
+<style type="text/css">
+.bgimg {
+    background-image: url('https://learningfirst.com/wp-content/uploads/2017/10/Teacher-taking-a-class-300x224.jpeg');
+}
+.software {
+    background-color:#646464;
+    color: #ff7225;
+}
+</style>
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://learningfirst.com/wp-content/uploads/2017/10/Teacher-taking-a-class-300x224.jpeg" title="main" charset="utf-8">
+<link rel="shortcut icon" type="image/ico" href="https://maxg-static-2.s3.amazonaws.com/static/maxg/favicon.ico?Signature=C%2Fi5VG%2Fre4uSX14eA2AiTzFLGso%3D&amp;Expires=1541230645&amp;AWSAccessKeyId=AKIAJDHFIV6QUC3D7I6A"/> -->
+<!--<div id="navbar" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="http://127.0.0.1:8000/first_app/login/"><h4> Log In</h4></a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-left">
+    <li><a href="http://127.0.0.1:8000/first_app/home/"><h4>QueOn</h4></a></li>
+  </ul>
+</div>-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<nav class="nav-section">
+  <div class="container-fluid">
+    <img class="navbar-brand" src="{% static 'first_app/icon.png' %}" height="100" width="100"> QuesOnline
+    <ul class="nav navbar-nav">
+      <li class="nav-item"><h1><font color="#F0F3F4">QuesOnline</font></h1></li>
+    </ul>
+  </div>
+		<div class="container">
+			<ul class="main-menu">
+				<li><a href="http://127.0.0.1:8000/first_app/home/">Home</a></li>
+				<li><a href="http://127.0.0.1:8000/first_app/send_login/">Submit Questions</a></li>
+        <li><a href="http://127.0.0.1:8000/first_app/login/">Log Out</a></li>
+			</ul>
+		</div>
+	</nav>
+  <nav class="navbar navbar-fixed-top navbar-light bg-primary">
+
+</nav>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/480A9445-F458-FD49-B152-AF015BB843BA/main.js" charset="UTF-8"></script>
+{% endblock %}
+{% block body %}
+<section class="about-section spad pt-0">
+		<div class="container">
+			<div class="section-title text-center">
+				<h3>Automatic Question Paper Generator</h3>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 about-text">
+					<h3>About </h3>
+					<p>Generation of question papers through a question bank is
+an important activity in learning management systems
+and educational institutions. The quality of question
+paper is based on various design constraints such as
+whether a question paper assesses different problem
+solving skills, whether it covers all units from the
+syllabus of a course and whether it covers various
+difficulty levels. The algorithm is illustrated in the paper
+by using four constraints namely question paper format,
+coverage of syllabus, coverage of difficulty levels and
+coverage of cognitive level. The algorithm presented is
+extensible to support any number of user defined
+constraints. Preparing the exam questions is very
+challenging, tedious and time consuming for the
+instructors. Thus with the help of this paper we present
+the solution in form of Automatic Question Paper
+Generator System.The design process performs
+the scrutiny and composes the examination paper using
+an efficient algorithm with a high rate of success. From
+the entered input, the examination paper will be
+generated automatically. The final paper will be stored
+as ‘Word Document’ files. The system shows
+characteristics like simple operation, a great interface,
+good usability, immense security, and high stability
+along with reliability.</p>
+					<h3 class="pt-4">Sailent Features</h3>
+					<ul class="about-list">
+						<li><i class="fa fa-check-square-o"></i> Simple user interface which increase the smooth the process of updating data. </li>
+						<li><i class="fa fa-check-square-o"></i> Generates and develops the well formatted question Paper in a matter of few seconds.</li>
+						<li><i class="fa fa-check-square-o"></i> User can generate test papers randomly and instantly, thus saving a lot of time. </li>
+						<li><i class="fa fa-check-square-o"></i> With the use of this system for exam paper generation there are zero chances of exam paper getting leaked as paper can be generated few
+minutes before the exam.</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 pt-5 pt-lg-0">
+					<img src="{%static 'first_app/main_image.jpeg'%} " alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block head %}
+{% load static %}
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{% static 'first_app/logindesign.css' %}"/>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<nav class="nav-section">
+  <div class="container-fluid">
+    <img class="navbar-brand" src="{% static 'first_app/icon.png' %}" height="100" width="100"> QuesOnline
+    <ul class="nav navbar-nav">
+      <li class="nav-item"><h1><font color="#F0F3F4">QuesOnline</font></h1></li>
+    </ul>
+  </div>
+  <div class="container">
+    <ul class="main-menu">
+      <li><a href="http://127.0.0.1:8000/first_app/hm_login">Home</a></li>
+      <li><a href="http://127.0.0.1:8000/first_app/logout/"> Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  function generate() {
+
+      var a = parseInt(document.getElementById("nochapter").value);
+      var ch = document.getElementById("ch");
+
+      for (i = 0; i < a; i++) {
+          var input = document.createElement("input");
+          ch.appendChild(input);
+      }
+  }
+  </script>
+
+{% endblock %}
+<body>
+{% block body %}
+<div class="container">
+
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+   <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav navbar-left">
+
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+
+<h1> Prepare Question Paper</h1>
+  <form><h3>
+      No. of Questions included</h3>
+      <input type="text" id="nochapter" />
+      <input type="button" value="set" onclick="generate()" />
+  </form>
+{% endblock %}
+</body>
